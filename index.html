@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>EQ TEST</title>
+</head>
+<body>
+    
+    <div id="main">
+        <div class="main_tit">
+            시작
+        </div>
+        <p>
+            EQ검사 입니다!<br>
+            아래 시작하기 버튼을 눌러 시작해 주십시오.
+        </p>
+        <button type="button" onclick="begin()">시작</button>
+    </div>
+
+    <div id="qna">
+        <div class="status">
+            <div class="statusBar"></div>
+        </div>
+        <div class="qBox"></div>
+        <div class="answerBox"></div>
+            
+    </div>
+
+    <div id="result">
+        <h1>당신의 결과는?!</h1>
+        <div class="resultname"></div>
+        <div class="resultDesc">a</div>
+        <button type="button" onclick="location.reload();">다시하기</button>
+    </div>
+
+
+
+
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
