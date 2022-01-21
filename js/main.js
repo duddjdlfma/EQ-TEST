@@ -20,19 +20,19 @@ function score(qIdx, total){
 
     if(result_num <= 24){
         resultDesc.innerHTML = "자신의 감정과 타인의 입장을 고려하지 못하는 정서적 장님.";
-    }else if(25 <= result_num || result_num <= 49){
+    }else if(25 <= result_num && result_num <= 49){
         resultDesc.innerHTML = "자신과 타인의 정서는 물론 그 상황과 처지에 대해 무감각한 편.";
-    }else if(50 <= result_num || result_num <= 74){
+    }else if(50 <= result_num && result_num <= 74){
         resultDesc.innerHTML = "자신과 타인의 정서에 무딘 편.";
-    }else if(75 <= result_num || result_num <= 99){
+    }else if(75 <= result_num && result_num <= 99){
         resultDesc.innerHTML = "정서와 감정 능력의 부족으로 문제를 겪을 우려가 약간 있다.";
-    }else if(100 <= result_num || result_num <= 124){
+    }else if(100 <= result_num && result_num <= 124){
         resultDesc.innerHTML = "평균수준.";
-    }else if(125 <= result_num || result_num <= 149){
+    }else if(125 <= result_num && result_num <= 149){
         resultDesc.innerHTML = "평균이상. 감정의 절제와 타인의 처지에 예민한 편.";
-    }else if(150 <= result_num || result_num <= 174){
+    }else if(150 <= result_num && result_num <= 174){
         resultDesc.innerHTML = "감성/정서지능은 높은 편. 신념을 향해서 나가되 대인관계 능력이 좋아서 인기를 얻을 수 있다.";
-    }else if(175 <= result_num || result_num <= 199){
+    }else if(175 <= result_num && result_num <= 199){
         resultDesc.innerHTML = "대단히 높은 감성/정서지능의 소유자, 타인의 감정에 예민하고 자신의 정서와 감정 통제 능력이 있다.";
     }else if(result_num == 200){
         resultDesc.innerHTML = "당신은 EQ천재, 완벽한 감성/정서지능의 소유자.";
