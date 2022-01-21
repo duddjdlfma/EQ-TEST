@@ -105,6 +105,7 @@ function goNext(qIdx){ // qna 값 넣어줄 함수
 }
 
 function begin(){ //시작하기 버튼을 클릭하면 실행
+    document.querySelector(".dis").disabled = true;
     main.style.animation = "fadeOut 1s"; //main섹션을 1초 동안 서서히 숨기기
     setTimeout(() => { // 0.45초가 지난 뒤 실행
         qna.style.animation = "fadeIn 1s"; //qna섹션을 1초 동안 서서히 나타나기
