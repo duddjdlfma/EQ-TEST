@@ -7,8 +7,9 @@ const endPoint = 10;
 let total_num = [];
 let num = 0;
 
-function score(qIdx, total){
+function score(total){
     var resultDesc = document.querySelector('.resultDesc');
+    var resultNum = document.querySelector('.resultNum');
 
     total_num.push(parseInt(total));
     
@@ -20,6 +21,7 @@ function score(qIdx, total){
 
     if(result_num <= 24){
         resultDesc.innerHTML = "자신의 감정과 타인의 입장을 고려하지 못하는 정서적 장님.";
+        // 49-0은 사이코패스
     }else if(25 <= result_num && result_num <= 49){
         resultDesc.innerHTML = "자신과 타인의 정서는 물론 그 상황과 처지에 대해 무감각한 편.";
     }else if(50 <= result_num && result_num <= 74){
@@ -36,11 +38,10 @@ function score(qIdx, total){
         resultDesc.innerHTML = "대단히 높은 감성/정서지능의 소유자, 타인의 감정에 예민하고 자신의 정서와 감정 통제 능력이 있다.";
     }else if(result_num == 200){
         resultDesc.innerHTML = "당신은 EQ천재, 완벽한 감성/정서지능의 소유자.";
+        // 200-175는 소시오패스 
     }
-
-    // console.log(a);
+    resultNum.innerHTML = `${result_num}점`;
 }
-
 
 function addAnswer(answerText, qIdx, total){
 
@@ -53,13 +54,7 @@ function addAnswer(answerText, qIdx, total){
 
     answer.addEventListener("click", function(e){  //버튼을 클릭했을 때
         // total_num.push(total);
-        score(qIdx, total);
-        
-        // for(let i=0; i<total_num.length; i++){
-        //     resultDesc.innerHTML(total_num[i]);
-        // }
-
-        // console.log(typeof(total_num));
+        score(total);
 
         var children = document.querySelectorAll('.answerList'); //answerList라는 이름을 가진 클래스는 children라고 선언
         for(let i = 0; i < children.length; i++){ //children 숫자만큼 반복
