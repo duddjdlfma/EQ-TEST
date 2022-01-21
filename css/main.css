@@ -17,7 +17,8 @@ body{background: yellowgreen;}
 
 #result{background: #fff; width: 80%; margin: 50px auto; padding: 50px; text-align: center; box-sizing: border-box; border-radius: 15px; display: none;}
 
-.resultDesc { margin: 100px 0;}
+.resultNum { margin: 0 0 30px 0; font-size: 30px; font-weight: bold; } 
+.resultDesc { margin: 40px 0 50px 0;}
 
 #result button { background: #fff; padding: 5px 15px; margin-top: 30px; border-radius: 10px; border: 1px solid palegreen; cursor: pointer; transition: 0.3s;}
 #result button:hover{ color:#fff; background: palegreen;}
